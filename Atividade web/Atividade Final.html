@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hospital Vida Saudável</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Puritan', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #13bce2;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            main {
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+            }
+            section{
+                background-color: white;
+                padding: 50px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .caixa {
+                max-width: 400px;
+                margin: auto;
+                font-family: 'Puritan', sans-serif;
+                font-size: 22px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .titulo h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            </style>
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <div class="titulo"><h1>Hospital Vida Saudável</h1></div>
+                <p>Agendamento de Consultas Online</p>
+            </header>
+            <main>
+                <section>
+                    <div class="caixa">
+                        <h2>Agende sua Consulta</h2>
+                        <form>
+                            <p>
+                                Nome:<br>
+                                <input type="text" required>
+                            </p>
+                            <p>
+                                Telefone:<br>
+                                <input type="tel" required>
+                            </p>
+                            <p>
+                                Especialidade:<br>
+                                <select required>
+                                    <option>Clínica Geral</option>
+                                    <option>Pediatria</option>
+                                    <option>Cardiologia</option>
+                                    <option>Dermatologia</option>
+                                </select>
+                            </p>
+                            <p>
+                                Data:<br>
+                                <input type="date" required>
+                            </p>
+                            <p>
+                                Horário:<br>
+                                <input type="time" required>
+                            </p>
+                            <button type="submit">Agendar Consulta</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
